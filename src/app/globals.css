@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-body), sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 2%; /* Near Black */
+    --foreground: 0 0% 98%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 65% 45%; /* Dark Red */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 270 50% 50%;
+    --secondary-foreground: 270 0% 98%;
+    --muted: 270 20% 20%;
+    --muted-foreground: 270 20% 70%;
+    --accent: 270 50% 45%; /* Dark Purple */
+    --accent-foreground: 270 0% 98%;
+    --destructive: 0 60% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 0 65% 45%;
+    --chart-1: 0 65% 45%;
+    --chart-2: 270 50% 45%;
+    --chart-3: 0 0% 80%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 2%; /* Near Black */
+    --foreground: 0 0% 98%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 65% 45%; /* Dark Red */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 270 50% 50%;
+    --secondary-foreground: 270 0% 98%;
+    --muted: 270 20% 20%;
+    --muted-foreground: 270 20% 70%;
+    --accent: 270 50% 45%; /* Dark Purple */
+    --accent-foreground: 270 0% 98%;
+    --destructive: 0 60% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 0 65% 45%;
+    --chart-1: 0 65% 45%;
+    --chart-2: 270 50% 45%;
+    --chart-3: 0 0% 80%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
